@@ -8,5 +8,5 @@ python:
 install:
   - pip install flask
   
-  script:
+script:
   - python -m unittest -v test
