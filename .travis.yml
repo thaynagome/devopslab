@@ -1,6 +1,6 @@
 language: python
 
-# Versão que a aplicação suporta.
+# Versão que a aplicação suporta
 python:
   - "3.7.9"
 
