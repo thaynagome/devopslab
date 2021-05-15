@@ -7,21 +7,3 @@ python:
 # Instalação de Módulos que são necessários para a Aplicação.
 install:
   - pip install flask
-
-dist: xenial
-os: linux
-
-# Defini o script de Teste que deve rodar toda vez que o código for alterado.
-
-script:
-    - python -m unittest -v test || travis_terminate 1;
-
-# Definir o Deploy no Heroku
-deploy:
-  provider: heroku
-  strategy: api
-  api_key: $HEROKU_API_KEY
-  edge: true 
-  app: devopslab-caio
-  on:
-      branch: main
